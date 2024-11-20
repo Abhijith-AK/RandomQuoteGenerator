@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyQuotes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="board">
+            <div class="board-screen">
+                <h1 id="title" class="svg-underline">Daily Quote</h1>
+                <div class="quote">
+                    <h2 id="quote">Thinking</h2>
+                </div>
+                <i style="text-align: right;"></i>
+            </div>
+        </div>
+        <button id="btn" onclick="getApi()"><em>Generate another Quote</em></button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

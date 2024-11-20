@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'chalkboard';
+    src: url(./ASSETS/Chalk\ Board.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #cfcaca;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    width: 70%;
+    min-height: 60%;
+    max-height: 90%;
+    background: url(./ASSETS/chalkboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid black;
+    box-shadow: 1px 1px 15px gray;
+    font-family: 'chalkboard', cursive;
+    padding: 2%;
+    border-radius: 12px;
+    color: #fafafa;
+    font-size: 2.2rem;
+}
+
+.board-screen{
+    position: relative;
+}
+
+.svg-underline {
+    display: inline-block;
+    position: relative;
+  }
+  .svg-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -5px; /* Adjust to position below the text */
+    left: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"><path d="M0 5 Q10 0, 20 5 T40 5 T60 5 T80 5 T100 5" stroke="white" fill="none" stroke-width="5"/></svg>');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+.quote{
+    margin-top: 5rem;
+}
+
+#btn{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border: 2px dashed gray;
+    border-radius: 16px;
+    padding: .5rem;
+    transition: all 0.2s ease-in;
+}
+
+#btn:hover{
+    border: 2px dashed #000;
+}
+
+#btn:active{
+    background-color: #cdd8cd;
+    color: #fafafa;
+}
